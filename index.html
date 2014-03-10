@@ -1,12 +1,27 @@
-/* /index.html
-*/
- …
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.4.0/ember.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/ember-data.js/1.0.0-beta.6/ember-data.min.js"></script>
- <script>
-   // your code
- </script>
-</body>
+<html>
+  <body>
+         <script type="text/x-handlebars" id="application">
+            <div class="main">
+              <h1>Hello World</h1>
+              {{outlet}}
+            </div>
+          </script>
+
+          <script type="text/x-handlebars" id="users">
+            <ul class="users-listing">
+              {{#each user in controller}}
+                <li>{{user.name}}</li>
+              {{else}}
+                <li>no users… :-(</li>
+              {{/each}}
+            </ul>
+          </script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.js"></script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.4.0/ember.js"></script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/ember-data.js/1.0.0-beta.6/ember-data.js"></script>
+       <script>
+         // your code
+       </script>
+  </body>
 </html>
